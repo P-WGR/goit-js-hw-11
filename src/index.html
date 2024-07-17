@@ -4,20 +4,50 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>goit-js-hw-11</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+    <section class="search">
+      <form>
+        <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="Search Images..."
+        />
+        <button type="submit">Search</button>
+      </form>
     </section>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <main class="gallery-container">
+      <div class="loader-container">
+        <div class="loader hidden"></div>
+      </div>
+      <ul id="gallery">
+        <!-- <li>
+          <img src="" alt="" />
+          <ul class="image-properties">
+            <li class="likes">
+              <span class="likesText"></span>
+              <span class="likesValue"></span>
+            </li>
+            <li class="views">
+              <span class="viewsText"></span>
+              <span class="viewsValue"></span>
+            </li>
+            <li class="comments">
+              <span class="commentsText"></span>
+              <span class="commentsValue"></span>
+            </li>
+            <li class="downloads">
+              <span class="downloadsText"></span>
+              <span class="downloadsValue"></span>
+            </li>
+          </ul>
+        </li> -->
+      </ul>
+    </main>
 
     <script type="module" src="./main.js"></script>
   </body>
